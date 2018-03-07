@@ -1,0 +1,77 @@
+.about-info {
+    width: 100%;
+    padding: 70px 0;
+    background-color: @colorAboutBackgraund;
+}
+.about-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: @colorWhite;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about-details {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+}
+.lead {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    box-sizing: border-box;
+}
+.about-list {
+    width: 100%;
+    .space-around;
+    flex-wrap: wrap;
+}
+.aboout-item {
+    text-align: left;
+    width: 33.3%;
+    padding: 30px;
+    box-sizing: border-box;
+    color: @colorWhite;
+}
+.item-title {
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        left: -35px;
+        background-size: cover;
+        border-radius: 50%;
+        background-color: @colorSpanText;
+        border: 1px solid rgba(198, 237, 181, .1);
+    }
+}
+
+.idea {
+    &:before {
+        background-image: url('../img/idea-icon.png');
+    }
+}
+.pie {
+    &:before {
+        background-image: url('../img/pie-icon.png');
+    }
+}
+.voice {
+    &:before {
+        background-image: url('../img/voice-icon.png');
+    }
+}
+.item-description {
+    font-size: 0.8em;
+}

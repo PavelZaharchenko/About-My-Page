@@ -1,0 +1,189 @@
+.about-info {
+    .lead {
+        margin: auto;
+        width: 50%;
+    }
+}
+.about-me {
+    .space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+.about-me-wrap__title {
+    width: 100%;
+    text-align: center;
+}
+.about-me-info {
+    padding: 0 20px;
+    width: 60%;
+}
+
+.about-me-wrap__title,
+.about-me-info__title {
+    font-size: 1em;
+}
+.about-me-info__text {
+    font-size: 0.8em;
+}
+// hover-block
+.eff {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-out;
+    &:hover {
+        .triangle {
+            opacity: 1;
+            border-width: 150px;
+        }
+        .overlay {
+            right: -45px;
+        }
+        .caption {
+            top: 0px;
+            transition-delay: 0.35s;
+        }   
+    }
+}
+.my-photo {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.selfy {
+    background-image: url('../img/my-photo.jpg');
+}
+.triangle-set {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.triangle {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    border: 5px solid transparent;
+    transition: opacity 0.15s linear 0s, border-width 0.35s linear 0.1s;
+}
+.triangle-1 {
+    border-top: 5px solid rgba(255,255,255,0.6);
+    top: 0px;
+    left: 0px;
+}
+.triangle-2 {
+    border-right: 5px solid rgba(255,255,255,0.6);
+    top: 0px;
+    right: 0px;
+}
+.triangle-3 {
+    border-bottom: 5px solid rgba(255,255,255,0.6);
+    bottom: 0px;
+    right: 0px;
+}
+.triangle-4 {
+    border-left: 5px solid rgba(255,255,255,0.6);
+    bottom: 0px;
+    left: 0px;
+}
+.caption {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: @colorWhite;
+    transition: all 0.2s linear 0s;
+}
+.hover-title {
+    width: 100%;
+    margin: 40px auto 0px auto;
+    background: rgba(0,0,0,0.7);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 10px 0;
+    position: relative;
+    box-sizing: border-box;
+    &:before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        display: block;
+        border: 40px solid transparent;
+        border-top: 15px solid rgba(0,0,0,0.7);
+        position: absolute;
+        top: 100%;
+        left: 35%;
+    }
+}
+.hover-description {
+    width: 100%;
+    margin: 40px auto 0px auto;
+    background: rgba(0,0,0,0.8);
+    font-weight: 400;
+    padding: 10px 0;
+    font-size: 0.8em;
+    box-sizing: border-box;
+}
+.my-contacts {
+    width: 100%;
+    margin-top: 20px;
+    .flex-center; 
+}
+.contacts-link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+    &:not(last-child) {
+        margin-right: 10px;
+    }
+    &:hover {
+        background-color: @colorSpanText;
+        transform: scale(1.1);
+        transition: 0.5s;
+        box-shadow: @colorSpanText 0px 0px 10px, @colorSpanText 0px 0px 10px, @colorSpanText 0px 0px 10px;
+    }
+}
+.linledin {
+    background-image: url('../img/linkedin.png');
+}
+.github {
+    background-image: url('../img/git-hub.png');
+}
+// hover-off        
+.who-i-am {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.incut {
+    .flex-center;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    background-image: url('../img/main-bg.jpg');
+    .back-fixed;
+}
+.incut-wrap {
+    width: 100%;
+    text-align: center;
+}
+.who-i-am__content {
+    box-sizing: border-box;
+    padding: 40px;
+    width: 50%;
+    background-color: @colorBlackWeAre;
+}

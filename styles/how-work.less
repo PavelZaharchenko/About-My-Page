@@ -1,0 +1,72 @@
+.how-work {
+    width: 100%;
+    padding: 70px 0;
+    .lamp;
+    .about-title {
+        color: @colorWhite;
+    }
+    .lead {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+.work-list {
+    .space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.work-item {
+    margin-top: 50px;
+    width: 25%;
+}
+
+.work-item-title {
+    width: 100%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.work-line {
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background-color: @colorSpanText;
+}
+.icon {
+    margin: auto;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(198, 237, 181, .1);
+    border-radius: 50%;
+    border: 1px solid @colorSpanText;
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        box-shadow: @colorSpanText 0px 0px 10px, @colorSpanText 0px 0px 10px, @colorSpanText 0px 0px 10px;
+    }
+}
+.eye {
+    background-image: url('../img/eye-icon.png');
+}
+.like {
+    background-image: url('../img/like-icon.png');
+}
+.creative {
+    background-image: url('../img/creative-icon.png');
+}
+.experimental {
+    background-image: url('../img/experiment-icon.jpg');
+}
+.work-item-text {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}

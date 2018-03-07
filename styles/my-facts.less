@@ -1,0 +1,104 @@
+.my-facts {
+    .view {
+        background-image: url('../img/client-testimonial.jpg');
+    }
+    .content-panel-1,
+    .content-panel-2,
+    .content-panel-3 {
+        margin: 50px 0;
+    }
+    .content-panel-3 {
+        background-color: rgba(71,67,64,.82);
+        .success {
+            width: 100%;
+            background-color: rgba(198,237,181,.3);
+        }
+    }
+}
+.counter {
+    font-size: 3em;
+    font-weight: 600;
+    color: @colorWhite;
+}
+
+// skills 
+.skills-wrap {
+    width: 100%;
+    .space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.tabs-wrap {
+    width: 50%;
+    box-sizing: border-box;
+    .space-between;
+    flex-wrap: wrap;
+}
+.tabs {
+    width: 100%;
+    .space-between;
+    border-bottom: 1px dashed;
+}
+.tabs-item-link {
+    display: inline-block;
+    color: @colorSpanText;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding:  10px;
+}
+.main-tab {
+    box-sizing: border-box;
+    padding-top: 20px;
+    width: 100%;
+    height: 300px;
+    text-align: left;
+}
+.active{
+    box-sizing: border-box;
+    color: @colorWhite;
+    background-color: rgba(57,57,57,.3);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.progress-block {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px 10px;
+}
+
+.progress_title {
+    display: inline-block;
+    color: @colorWhite;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.muted {
+    color: @colorWhite;
+    font-size: 0.8em;
+}
+.pull-right {
+    float: right !important;
+}
+
+
+progress[value] {
+    width: 100%; 
+    height: 15px;
+    background: rgba(77, 56, 36, .82);
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .5) inset;
+    margin: 0 0 1.5em; 
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: rgba(77, 56, 36, .82);
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+.progress-line::-webkit-progress-value {
+    background: rgba(71,67,64,.82);
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}

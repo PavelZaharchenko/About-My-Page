@@ -1,0 +1,37 @@
+.process {
+    .work-list {
+        position: relative;
+        margin-bottom: 40px;
+        &:after {
+            top: 125px;
+            left: 0;
+            position: absolute;
+            content: " ";
+            width: 100%;
+            height: 1px;
+            border-top: 1px dashed;
+            z-index: 0;
+        }
+    }
+    .work-item {
+        z-index: 1;
+    }
+    .icon {
+        .flex-center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: @colorAboutBackgraund;
+    }
+    .develop {
+        width: 70px;
+    }
+    .research,
+    .concept,
+    .test {
+        width: 50px;
+    }
+}
